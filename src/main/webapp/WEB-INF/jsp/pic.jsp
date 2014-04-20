@@ -5,16 +5,16 @@
 <html lang="zh">
 <head>
 <meta charset="utf-8">
-<title>大同中学自主招生系统</title>
+<title>大同中学自荐招生系统</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="">
 
 <!-- Author: William Wang -->
 <!--  www.zhiweiwang.com  -->
-<link href="assets/css/bootstrap.css" rel="stylesheet">
-<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-<link href="assets/css/style.css" rel="stylesheet">
+<link href="${pageContext.request.contextPath}/assets/css/bootstrap.css" rel="stylesheet">
+<link href="${pageContext.request.contextPath}/assets/css/bootstrap-responsive.css" rel="stylesheet">
+<link href="${pageContext.request.contextPath}/assets/css/style.css" rel="stylesheet">
 
 <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -70,7 +70,7 @@ body{
 	<div id="content" class="picform">
 		<form name="form" action="pic" method="POST" enctype="multipart/form-data">
 			<c:if test="${imgpath != null}">
-				<img class="imgclass" src="${imgpath}" />
+				<a href="${imgpath}" target="_blank"><img class="imgclass" src="${imgpath}" /></a>
 			</c:if>
 			<c:if test="${imgpath == null}">
 				<input class="pull-right" id="fileToUpload" name="fileToUpload" type="file" onchange="readURL(this);">
@@ -82,7 +82,6 @@ body{
 				<input class="delbtn btn" id="delbtn" name="delbtn" type="submit" value="删除"/>
 				<input type="hidden" value="del" id="action" name="action" >
 			</c:if>
-			
 		</form>
 
 	</div>

@@ -4,13 +4,14 @@ public class DTContants {
 
 	public static final String USER_IN_SESSION = "dtuser";
 	public static final String STUDENT_IN_SESSION = "sis";
-
+	public static final String SYS_CONF_PHASE ="SYS_CONF_PHASE";
+	
 	public static final String STUDENT_ID_IN_SESSION = "student_id";
 	public static final String DT_STUDENT = "dtstudent";
 	public static final String MSG_ERRER = "errmessage";
 	public static final String DT_STUDENT_LIST = "dtstudentlist";
 	public static final String QUERY_CONF ="query_conf";
-	public static final int LINES_PER_PAGE = 20;
+	public static final int LINES_PER_PAGE = 50;
 	public static final String TOTAL_COUNT = "totalcount";
 	public static final String DT_ID = "id";
 	public static final String DT_USERNAME = "username";
@@ -54,10 +55,21 @@ public class DTContants {
 	public static final String DT_ZONGFEN2 = "zongfen2";
 	public static final String DT_PAIMIN1 = "paimin1";
 	public static final String DT_PAIMIN2 = "paimin2";
+	public static final String DT_STS = "sts";
 	public static final String IMG_PATH = "imgpath";
+	public static final String DT_INTERVIEW = "interview";
 	public static final String[] IMG_TYPE_ALLOWED = {"jpg","gif","jpeg","png"};
 	public static final String RET_VIEWER = "retviewer";
+	public static final String LOGINTEXT = "logintext";
+	public static final String TIMETABLELIST = "timetablelist";
 	
+	public static final String STS_UNPROVED = "sts_unproved";
+	public static final String STS_WAIT = "sts_wait";
+	public static final String STS_REJECT ="sts_reject";
+	public static final String STS_PASS="sts_pass";
+	//public static final String STS_ECHOED = "sts_echo";
+	public static final String DT_RESULT_MSG = "resultmsg";
+	public static final String DT_INTERVIEW_TIME = "interviewtime";
+	public static final int MAX_SIZE = 4;
 	
-
 }

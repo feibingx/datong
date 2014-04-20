@@ -16,20 +16,13 @@ import static org.springframework.web.bind.annotation.RequestMethod.GET;
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
 
-/**
- * Created with IntelliJ IDEA.
- * User: WilliamW
- * Date: 13-4-18
- * Time: 上午10:26
- * To change this template use File | Settings | File Templates.
- */
 @Controller
 @RequestMapping("/superlogin")
 @SessionAttributes(DTContants.USER_IN_SESSION)
 public class SuperLoginController {
     private Logger logger = LoggerFactory.getLogger(this.getClass());
-    private final String PASSWORD = "b0baee9d279d34fa1dfd71aadb908c3f";//"4ce163083232c3a9e1adbea4fca462e2";
-    
+    private final String PASSWORD = "161ebd7d45089b3446ee4e0d86dbcf92";
+
     @RequestMapping(method = POST)
     public ModelAndView login(@RequestParam String password) {
 

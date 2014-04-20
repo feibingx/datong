@@ -6,7 +6,7 @@
 <html lang="zh">
   <head>
     <meta charset="utf-8">
-    <title>大同中学自主招生系统</title>
+    <title>大同中学自荐招生系统</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -32,12 +32,8 @@
   </head>
 <body>
 <div class="page">
-  <div class="logo">
-			<img class="pull-left title" src="assets/img/logo.png">
-			<div class="pull-left title">自主招生系统 管理后台</div>
-			<a href="login" class="pull-right">普通登录</a>
-		</div>
-  <div class="centerw wrapper">
+<jsp:include page="/logo" />
+<div class="centerw wrapper">
 <!--      <div class="row-fluid">-->
             <!-- form begin -->
             <c:if test="${errmessage!=null && fn:length(errmessage)>0}">

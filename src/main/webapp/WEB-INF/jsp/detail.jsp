@@ -7,7 +7,7 @@
 <html lang="zh">
 <head>
 <meta charset="utf-8">
-<title>大同中学自主招生系统</title>
+<title>大同中学自荐招生系统</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="">
@@ -28,17 +28,19 @@
 	<![endif]-->
 
 <style type="text/css">
-.wrapper tr td {
+tr td {
 	padding: 5px;
 	margin: 2px;
 	text-align: left;
 	border: solid 1px #888888 !important;
 }
 
-.wrapper table {
+table {
 	width: 790px;
+	max-width: 790px;
 }
 
+p{max-width: 780px;}
 .wrapper div {
 	text-align: center;
 	margin: 2px auto;
@@ -91,12 +93,12 @@
 }
 </style>
 </head>
-<body>
-	<!--startprint-->
+<body>	
 	<div class="navbar navbar-fixed-top ">
 		<div class="mynav">
 			<span class="center"> 
-			<a id="pass" name="pass" onClick="setDatetime();" class="btn btn-large btn-success">通过</a>
+			<!-- <a id="pass" name="pass" onClick="setDatetime();" class="btn btn-large btn-success">通过</a> -->
+			<a href="../deal?action=sts_pass" class="btn btn-large btn-success">通过</a>
 			<a href="../deal?action=sts_wait" class="btn btn-large btn-warning">待定</a>
 			<a href="../deal?action=sts_reject" class="btn btn-large btn-danger">拒绝</a>
 			<a href="../admin" class="btn btn-large btn-info">返回</a>
@@ -118,7 +120,7 @@
 			<!--startprint-->
 			<table>
 					<tr>
-						<td>姓名</td>
+						<td style="width:15%">姓名</td>
 						<td>${dtstudent.name}</td>
 						<td>性别</td>
 						<td> ${dtstudent.sex} </td>
@@ -129,28 +131,25 @@
 						</td>
 					</tr>
 					<tr>
-						<td>毕业学校</td>
-						<td>${dtstudent.gradeschool}</td>
 						<td>毕业区县</td>
 						<td>${dtstudent.gradesection}</td>
-
 						<td>身体状况</td>
-						<td>${dtstudent.city}</td>
+						<td>${dtstudent.healthy}</td>
+						<td>中考报名号</td>
+						<td>${dtstudent.number}</td>
+					</tr>
+					<tr>
+						<td>毕业学校</td>
+						<td colspan="5">${dtstudent.gradeschool}</td>
 					</tr>
 					<tr>
 						<td>出生年月</td>
 						<td colspan="5">${dtstudent.birthyear}年${dtstudent.birthmonth}月${dtstudent.birthday}日</td>
-					</tr>
-					<tr>
-						<td>中考报名号</td>
-						<td colspan="5">${dtstudent.number}</td>
-					</tr>
+					</tr>					
 					<tr>
 						<td>户口所在地</td>
 						<td colspan="5">${dtstudent.city}</td>
-					</tr>
-					
-				
+					</tr>				
 				</table>
 				<table>
 					<tr>
@@ -325,7 +324,6 @@
 			<!-- form end-->
 		</div>
 	</div>
-	<!--endprint-->
 
   <div data-backdrop="false" tabindex="-1" class="modal fade hide in model-size" id="winModal" >
   	<form action="../deal" method="post">

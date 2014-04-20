@@ -7,7 +7,7 @@
 <html lang="zh">
 <head>
 <meta charset="utf-8">
-<title>大同中学自主招生系统</title>
+<title>大同中学自荐招生系统</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="">
@@ -23,23 +23,19 @@
 .statusbar{
 	padding: 12px 0;
 }
+.link{
+	margin: 0 0 0 10px;
+}
 </style>
 <body>
 	<div class="page">
-		<div class="logo">
-			<img class="pull-left" src="assets/img/logo.png">
-			<div class="pull-left title">自主招生系统</div>
-			<div>
-				<a href="logout" class="pull-right">注销</a>
-			</div>
-		</div>
-		
+		<jsp:include page="/logo" />
 		<div class="wrapper container">
 			<div class="statusbar">
-				<a href="?sts=sts_pass" class="alert alert-success">通过: ${totalcount.sts_pass}</a> 
-				<a  class="alert alert-info" href="?sts=sts_unprove">未审核：${totalcount.sts_unprove}</a>
-				<a  class="alert"  href="?sts=sts_wait">待定：${totalcount.sts_wait}</a>
-				<a  class="alert alert-error"  href="?sts=sts_reject">拒绝：${totalcount.sts_reject}</a>
+				<a href="?sts=sts_pass" class="alert alert-success">通过: ${totalcount.sts_pass}</a>&nbsp;
+				<a class="alert alert-info" href="?sts=sts_unprove">未审核：${totalcount.sts_unprove}</a>&nbsp;
+				<a class="alert"  href="?sts=sts_wait">待定：${totalcount.sts_wait}</a>&nbsp;
+				<a class="alert alert-error"  href="?sts=sts_reject">拒绝：${totalcount.sts_reject}</a>
 				<span class="pull-right">
 					<c:if test="${query_conf.sts!=null}">
 						<a href="admin?sts=clear">全部</a>
@@ -50,28 +46,25 @@
 					<c:if test="${query_conf.listsize >= query_conf.limit}">
 						<a href="admin?start=${query_conf.nextstart}&limit=${query_conf.limit}">下一页</a>
 					</c:if>
-					<a href="search" class="btn">精确搜索</a>
+					
 				</span>
 			</div>
 			<table class="table table-hover">
 				<thead>
 					<tr>
-						<th>中考报名号</th>
-						<th>姓名</th>
-						<th>性别</th>
-						<th>毕业学校</th>
-						<th>当前状态</th>
+						<th style="width:1%"><a href="?order=nid">#</a></th>
+						<th style="width:15%"><a href="?order=pid">身份证号</a></th>
+						<th style="width:9%"><a href="?order=name">姓名</a></th>
+						<th style="width:8%"><a href="?order=sex">性别</a></th>
+						<th style="width:20%"><a href="?order=gradeschool">毕业学校</a></th>
+						<th style="width:10%">状态</th>
 						<th></th>
 					</tr>
 				</thead>
 				<tbody>
 					<c:forEach var="dtstudent" items="${dtstudentlist}">
 						<tr>
-							<!-- <div class="list-avatar"> -->
-							<%-- 	<a href="?businessmanId=${dtstudent.id}"> --%>
-							<%-- 		<img src="assets/img/user-icon.png"> <span> <b>${businessman.name}</b> --%>
-							<!-- 	</span> </a> -->
-							<!-- </div> -->
+							<td>${dtstudent.nid}</td>
 							<td>${dtstudent.pid}</td>
 							<td>${dtstudent.name}</td>
 							<td>${dtstudent.sex}</td>
@@ -81,7 +74,7 @@
 							</td>
 							<td>
 							<a href="detail/${dtstudent.id}" class="btn btn-info">审阅</a>
-							<a href="#" onClick="setDatetime(${dtstudent.id});" class="btn btn-success">通过</a>
+							<a href="pass?action=sts_pass&id=${dtstudent.id}" class="btn btn-success">通过</a>
 							<a href="reject?id=${dtstudent.id}" class="btn btn-danger">拒绝</a></td>
 						</tr>
 					</c:forEach>
