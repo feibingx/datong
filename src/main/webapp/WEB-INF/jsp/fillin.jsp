@@ -70,7 +70,7 @@ table {
 					<tr>
 						<td style="width:15%">姓名</td>
 						<td><input type="text" id="name" name="name"
-							value="${dtstudent.name}" placeholder="请输入姓名" class="required input-small">
+							value="${dtstudent.name}"  class="required input-small">
 						</td>
 						<td>性别</td>
 						<td><select id="sex" style="width:50px" name="sex" required>
@@ -81,7 +81,7 @@ table {
 						</select></td>
 						<td>政治面貌</td>
 						<td><input type="text" id="policy" name="policy"
-							placeholder="请输入" class="required input-small" value="${dtstudent.policy}">
+							 class="required input-small" value="${dtstudent.policy}">
 						</td>
 						<td rowspan="5" style="width:110px;">
 							<iframe id="iframe" src="pic" width="110" height="160" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" title="双击浏览选择需要上传的照片" data-content="仅允许上传JPG、PNG、GIF文件<br>选择完毕后请点击提交" data-placement="top" data-toggle="popover" rel="popover" >	</iframe>
@@ -90,22 +90,22 @@ table {
 					<tr>
 						<td>毕业区县</td>
 						<td><input type="text" id="gradesection" name="gradesection"
-							value="${dtstudent.gradesection}" placeholder="请输入"
+							value="${dtstudent.gradesection}" 
 							class="required input-small">
 						</td>
 						<td>身体状况</td>
 						<td><input type="text" id="healthy" name="healthy"
-							placeholder="请输入" class="required input-small" value="${dtstudent.healthy}">
+							 class="required input-small" value="${dtstudent.healthy}">
 						</td>
 						<td>中考报名号</td>
 						<td><input type="text" id="number" name="number"
-							placeholder="请输入" class="required input-small" value="${dtstudent.number}">
+							 class="required input-small" value="${dtstudent.number}">
 						</td>
 					</tr>
 					<tr>
 						<td>毕业学校</td>
 						<td colspan="5"><input type="text" id="gradeschool" name="gradeschool"
-							value="${dtstudent.gradeschool}" placeholder="请输入" class="required input">
+							value="${dtstudent.gradeschool}"  class="required input">
 						</td>
 					</tr>
 					<tr>

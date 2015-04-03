@@ -114,9 +114,10 @@ public class FillController {
 
 			DTUtils.makeJson2Map(result, "honors");
 			DTUtils.makeJson2Map(result, "prices");
+
+			mav.addObject(DTContants.DT_STUDENT, result);
 		}
 		mav.setViewName("fillin");
-		mav.addObject(DTContants.DT_STUDENT, result);
 		return mav;
 	}
 
