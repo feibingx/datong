@@ -20,4 +20,7 @@ public interface AmiinMapper {
 	@Update("update amiin set feedback=#{feedback} where username=#{username}")
 	public int updateFeedbake(@Param("username") String username, @Param("feedback") String feedback);
 
+	@Select("select * from amiin order by score, nid")
+	public List<Map<String, ?>> getAll();
+
 }

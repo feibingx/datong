@@ -61,7 +61,7 @@ h1 {
 					<fmt:message key="${errmessage}" />
 				</div>
 			</c:if>
-			<h1>冬令营结果通知入口</h1>
+			<h1>开放日结果通知入口</h1>
 			<div class="board">
 				<form class="form-horizontal" action="amiin" method="post">
 					<div class="control-group">

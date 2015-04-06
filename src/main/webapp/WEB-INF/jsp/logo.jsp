@@ -15,6 +15,7 @@
 	  </li>
 	  <li><a href="${pageContext.request.contextPath}/superlogin">设置审核员</a></li>
 	  <li><a href="${pageContext.request.contextPath}/export">导出数据</a></li>
+	  <li><a href="${pageContext.request.contextPath}/exportOpenDay">导出开放日</a></li>
 	  <li><a href="${pageContext.request.contextPath}/login">回到首页</a></li>
 	  <li><a href="${pageContext.request.contextPath}/logout">注销</a></li>
 	</ul>

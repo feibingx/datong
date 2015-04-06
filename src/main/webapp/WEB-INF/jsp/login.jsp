@@ -165,10 +165,12 @@ form{
             <div class="control-group">
               <div class="controls">
                 <button type="submit" class="btn">登录</button>
+                <!-- 
                 <span class="help-inline hidden">nbsp;</span>
                 <a href="register" class="btn">注册</a>
                 <span class="help-inline hidden">nbsp;</span>
-              </div>
+               -->
+               </div>
             </div>
           </form>
         </div>
@@ -213,7 +215,7 @@ form{
 <footer class="footer"  valign="bottom">
   <div class="container">
     <p class="pull-right">本站推荐使用Firefox、Chrome浏览</p>
-    <p>Copyrigth ©2013 大同高级中学</p>
+    <p>Copyrigth ©2015 大同高级中学</p>
   </div>
 </footer>
 
