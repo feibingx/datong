@@ -38,9 +38,9 @@
 <!--      <div class="row-fluid">-->
             <!-- form begin -->
             <form class="form-horizontal" action="register" id="theform" method="post">
-            	<div class="control-group">
+            	<h2 class="control-group" style="margin-top:100px;">
             		欢迎注册
-            	</div>
+            	</h2>
 				<div class="control-group">
 					<label class="control-label" for="inputEmail">用户名</label>
 					<div class="controls">

@@ -14,6 +14,9 @@ public class DTMessage {
 	public static final String NOT_AVLID_REQUEST = "not_valid_request";
 	public static final String UPDATE_LOGINTEXT_SUCCESS = "search_update_logintext_success";
 	public static final String ECHO_ACCEPTED="echo_accepted";
+	public static final Object IAMIN_NOT_FOUND = "i_am_in_not_found";
+	public static final Object IAMIN_DONE_UPDATE_NO = "i_am_in_done_update_no";
+	public static final Object IAMIN_DONE_UPDATE = "i_am_in_done_update";
 
 	
 }

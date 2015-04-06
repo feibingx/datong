@@ -66,6 +66,7 @@ CREATE TABLE dt_students (
    sts varchar(12) default 'sts_unprove',
    role varchar(12),
    interview varchar(32),
+   feedback varchar(12),
    primary key(id)
 );
 
