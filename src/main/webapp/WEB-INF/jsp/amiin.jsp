@@ -86,6 +86,7 @@ h1 {
 						</div>
 					</div>
 				</form>
+				<p style="margin:12px 50px;">登录名格式为“活动号+学生姓名”,  如“001王小明”</p>
 			</div>
 		</div>
 	</div>
