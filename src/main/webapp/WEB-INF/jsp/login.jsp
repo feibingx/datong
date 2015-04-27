@@ -165,11 +165,11 @@ form{
             <div class="control-group">
               <div class="controls">
                 <button type="submit" class="btn">登录</button>
-                <!-- 
+ 
                 <span class="help-inline hidden">nbsp;</span>
                 <a href="register" class="btn">注册</a>
                 <span class="help-inline hidden">nbsp;</span>
-               -->
+ 
                </div>
             </div>
           </form>

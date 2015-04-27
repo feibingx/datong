@@ -51,7 +51,7 @@
 	margin: 40px 8px 0 ;
 }
 .delbtn{
-	margin: -70px 23px 0;
+	margin: 0px 23px 0;
 	opacity: 0.5;
 }
 .submitbtn{
