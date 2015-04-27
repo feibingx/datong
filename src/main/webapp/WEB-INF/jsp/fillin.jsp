@@ -112,11 +112,12 @@ table {
 						<td>出生年月</td>
 						<td colspan="5"><select style="width:100px" id="birthyear"
 							name="birthyear">
+							
 								<option value="1996"
 									<c:if test="${dtstudent.birthyear=='1996' }">selected</c:if>>1996
-								</option>
+								</option>								
 								<option value="1997"
-									<c:if test="${dtstudent.birthyear=='1997' }">selected</c:if>>1997
+									<c:if test="${dtstudent.birthyear=='1998' }">selected</c:if>>1997
 								</option>
 								<option value="1998"
 									<c:if test="${dtstudent.birthyear=='1998' }">selected</c:if>>1998
@@ -126,6 +127,18 @@ table {
 								</option>
 								<option value="2000"
 									<c:if test="${dtstudent.birthyear=='2000' }">selected</c:if>>2000
+								</option>
+								<option value="2001"
+									<c:if test="${dtstudent.birthyear=='2001' }">selected</c:if>>2001
+								</option>
+								<option value="2002"
+									<c:if test="${dtstudent.birthyear=='2002' }">selected</c:if>>2002
+								</option>
+								<option value="2003"
+									<c:if test="${dtstudent.birthyear=='2000' }">selected</c:if>>2003
+								</option>
+								<option value="2004"
+									<c:if test="${dtstudent.birthyear=='2000' }">selected</c:if>>2004
 								</option>
 						</select>年</span> <select style="width:55px" id="birthmonth" name="birthmonth">
 								<c:forEach var="x" begin="1" end="12" step="1">
@@ -501,7 +514,15 @@ table {
 					city : "required",
 					address : "required",
 					cell : "required",
-					allright : "required"
+					allright : "required",
+					number: {
+					    required: true,
+					    minlength: 12
+					   },
+					pid:{
+						required: true,
+						minlength: 18
+					}
 				},
 				messages : {
 					name : "必填",
@@ -509,7 +530,9 @@ table {
 					city : "必填",
 					address : "必填",
 					cell : "必填",
-					allright : "请确认所填信息真实有效"
+					allright : "请确认所填信息真实有效",
+					number:"中考报名号必须为12位",
+					pid:"身份证号码必须为18位"
 				}
 			});
 		});
