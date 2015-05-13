@@ -104,12 +104,5 @@ public class SupertableController {
 		return cnts;
 	}
 
-	/**
-	 * 确定最小的组
-	 * @param cnts
-	 * @return
-	 */
-	
-
 	private static final String PRE = "Time";
 }

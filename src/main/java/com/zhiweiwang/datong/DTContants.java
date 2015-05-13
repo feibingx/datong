@@ -70,7 +70,7 @@ public class DTContants {
 	//public static final String STS_ECHOED = "sts_echo";
 	public static final String DT_RESULT_MSG = "resultmsg";
 	public static final String DT_INTERVIEW_TIME = "interviewtime";
-	public static final int MAX_SIZE = 4;
+	public static final int MAX_SIZE = 3;
 	public static final String IAMIN_IN_SESSION = "iamin";
 	
 }
