@@ -141,12 +141,13 @@ form{
       <div class=" TwoLBoxTop">
         <p class="loginTitle">用户登录</p>
         <div>
+        <h3>感谢您报考大同中学，资料正在审核中，敬请关注我校招生动态</h3>
           <c:if test="${errmessage!=null && fn:length(errmessage)>0}">
             <div class="help-inline error">
               <fmt:message key="${errmessage}" />
             </div>
           </c:if>
-
+<!-- 
           <form class="form-vertical" action="login" method="post" >
             <div class="control-group">
               <label class="control-label" for="name">用户名</label>
@@ -173,6 +174,7 @@ form{
                </div>
             </div>
           </form>
+ -->
         </div>
         <div style="margin-top:60px; padding: 20px;">
           <ul class="nav nav-tabs nav-stacked" style="width:220px;">
